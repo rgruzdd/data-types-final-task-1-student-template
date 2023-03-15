@@ -4,14 +4,10 @@ def check(lst: List[Dict[Any, Any]]) -> Set[Any]:
     """
     Add your code here or call it from here   
     """
-    new_list = []
+    new_set = set()
     for i in lst:
         for value in i.values():
-            if value not in new_list:
-                new_list.append(value)
+            new_set.add(value)
+    return new_set
 
-
-    return new_list
-
-    pass
 
